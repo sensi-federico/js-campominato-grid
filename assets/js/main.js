@@ -11,10 +11,26 @@ const containerEl = document.querySelector('.my-container');
 const button = document.querySelector('.btn');
 
 function start () {
-    for (let i = 1; i <= 100; i++) {
-        const markUp = `<div class="cell" src="" alt="">${i}</div>`
-        containerEl.insertAdjacentHTML('beforeend', markUp);
+    
+    const level = document.querySelector('.selector').value;
+    console.log(level);
+    if (level == 1) {
+        for (let i = 1; i <= 100; i++) {
+            const markUp = `<div class="cell lvl_1" src="" alt="">${i}</div>`
+            containerEl.insertAdjacentHTML('beforeend', markUp);
+        }
+    } else if (level == 2){
+        for (let i = 1; i <= 81; i++) {
+            const markUp = `<div class="cell lvl_2" src="" alt="">${i}</div>`
+            containerEl.insertAdjacentHTML('beforeend', markUp);
+        }
+    } else if (level == 3){
+        for (let i = 1; i <= 49; i++) {
+            const markUp = `<div class="cell lvl_3" src="" alt="">${i}</div>`
+            containerEl.insertAdjacentHTML('beforeend', markUp);
+        }
     }
+
 
     const cells = document.querySelectorAll('.cell');
     
@@ -26,4 +42,9 @@ function start () {
             console.log(cellNum);
         })
     }   
+}
+
+
+function reload () {
+    location.reload();
 }

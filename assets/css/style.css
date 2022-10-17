@@ -8,15 +8,31 @@
 
 
 .cell {
-    width: calc(100% / 10);
     border: 1px solid black;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: whitesmoke;
 }
 
 .bg {
     background-color: aqua;
+}
+
+.lvl_1 {
+    width: calc(100% / 10);
+}
+
+.lvl_2 {
+    width: calc(100% / 9);
+}
+
+.lvl_3 {
+    width: calc(100% / 7);
+}
+
+.selector {
+    padding: 0.5rem;
 }
