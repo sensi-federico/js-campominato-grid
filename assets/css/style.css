@@ -1,19 +1,22 @@
-
-.my_container {
+.my-container {
     max-width: 80%;
     margin: auto;
-}
-
-
-.my_row {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.my-col {
-    width: calc( (100% / 10) - 1rem);
+
+.cell {
+    width: calc(100% / 10);
     border: 1px solid black;
-    text-align: center;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bg {
+    background-color: aqua;
 }
